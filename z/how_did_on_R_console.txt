@@ -1,0 +1,12 @@
+#1 pdf
+
+pdf("z.pdf")
+all <- read.csv("z.csv",header=TRUE,as.is=TRUE)
+hist(all[,2])
+dev.off()
+
+
+#2 png
+png("z.png")
+plot(all[,1],all[,2])
+dev.off()
